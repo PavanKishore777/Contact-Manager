@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View-Contact Details</title>
+    <link rel="stylesheet" href="bootstrap-icons-1.11.1/bootstrap-icons.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .outlined-text {
+               
+                text-shadow: 0 0 black, 0 1px black, 1px 0 black, 0 0 black; /* Create an outline effect */
+          }
+    </style>
+
+    
+</head>
+<body>
+    <!--Nav -Bar -->
+   
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <i class="bi bi-phone"></i>Contact <span class="text-warning">Manager</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#simple-navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="simple-navbar">
+                <ul class="navbar-nav ms-auto"> <!-- Add the ml-auto class here -->
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                           <i class="bi bi-lock-fill"></i> Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Register.html" class="nav-link">
+                           <i class="bi bi-person-add"></i> Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- view contact details heading here-->
+    <p class="display-1 text-decoration-underline"> <span class="text-warning text-decoration-underline"> View</span> Details</p>
+
+    <!--view -Contact -->
+
+    <section class="mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="h3 text-warning">View Contact Details</p>
+                    <p class="fst-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit ipsa at fuga autem praesentium, et eos consectetur excepturi ad reprehenderit.</p>
+                </div>
+            </div>
+            <div class="row mt-3 align-items-center" id="contact-row">
+                <!-- <div class="col-sm-3">
+                    <img class="img-fluid rounded-circle shadow-lg bg-white" src="./images/contact1img.png" alt="" >
+
+                </div>
+                <div class="col-sm-8 offset-1">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            Name : <span class="fw-bold text-warning">Pavan</span>
+                        </li>
+                        <li class="list-group-item">
+                            E-mail : <span class="fw-bold text-warning">Pavan@gmail.com</span>
+                        </li>
+                        <li class="list-group-item">
+                            Mobile.no : <span class="fw-bold text-warning">1234567890</span>
+                        </li>
+                        <li class="list-group-item">
+                            Company : <span class="fw-bold text-warning">ABC Company</span>
+                        </li>
+                        <li class="list-group-item">
+                            Group : <span class="fw-bold text-warning">Office</span>
+                        </li>
+                        <li class="list-group-item">
+                            Title : <span class="fw-bold text-warning">React Developer</span>
+                        </li>
+                       
+                        
+                    </ul>
+
+                </div>-->
+               
+            </div>
+            <div class="row mt-3">
+                <div class="col">
+                    <a href="index.html" class="btn btn-warning" value="Back"> <i class="bi bi-arrow-left-circle-fill"></i> Back</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/viewcontact.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add-Contact </title>
+    <link rel="stylesheet" href="bootstrap-icons-1.11.1/bootstrap-icons.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   
+<!--Nava- Bar -->
+
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <i class="bi bi-phone"></i>Contact <span class="text-warning">Manager</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#simple-navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="simple-navbar">
+                <ul class="navbar-nav ms-auto"> <!-- Add the ml-auto class here -->
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                           <i class="bi bi-lock-fill"></i> Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Register.html" class="nav-link">
+                           <i class="bi bi-person-add"></i> Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <p class="display-1 text-decoration-underline">Add <span class="text-warning text-decoration-underline"> Contact</span></p>
+
+    <section class="mt-3" style="border: 2px solid white;border-radius: 10px;width: 98vw;height: auto; box-shadow: 0 0 10px gray;margin-left: 10px;margin-right: 20px;">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="h3 text-success"> Enter Contact Details </p>
+                    <p class="fst-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, amet. A distinctio omnis expedita! Sint est adipisci deleniti quam recusandae!
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <form id="add-contact-form">
+                        <div class="mb-2">
+                            <input required type="text" id="name-input" placeholder="Enter Name" class="form-control">
+                        </div>
+                        <div class="mb-2">
+                            <input required type="text" id="image-input" placeholder="imageurl" class="form-control">
+                        </div>
+                        <div class="mb-2">
+                            <input required type="number" id="mobile-input" placeholder="Mobile" class="form-control">
+                        </div>
+                        <div class="mb-2">
+                            <input required type="email" id="email-input" placeholder="Email" class="form-control">
+                        </div>
+                        <div class="mb-2">
+                            <input required type="text" id="company-input" placeholder="Company Name" class="form-control">
+                        </div>
+                        <div class="mb-2">
+                            <input required type="text"id="title-input" placeholder="Title" class="form-control">
+                        </div>
+                        <select required class="form-control" id="group-select-input">
+                            
+                        </select>
+                        <div class="mb-2">
+                            <input type="submit" class="btn btn-success" value="Create">
+                            <a href="index.html" class="btn btn-danger">Cancel</a>
+
+                          
+                        </div>
+                        
+                    </form>
+                </div>
+                <div class="col-sm-3">
+                    <img  class="img-fluid rounded-circle shadow-lg bg-white" src="" id="display-image"  alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/addcontact.js" type="module"></script>
+    
+</body>
+</html>

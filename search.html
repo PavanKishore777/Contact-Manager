@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    #searchResults {
+        display: none;
+    }
+</style>
+</head>
+<body>
+
+<input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Search...">
+<div id="searchResults"></div>
+
+<script>
+function searchFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById('searchInput');
+    filter = input.value.toUpperCase();
+    searchResults = document.getElementById('searchResults');
+    searchResults.style.display = "block"; // Display the search results div
+
+    // Simulated search data
+    var data = ["apple", "banana", "cherry", "date", "grape", "kiwi", "mango", "orange", "pear", "quince"];
+
+    searchResults.innerHTML = ""; // Clear previous results
+
+    for (i = 0; i < data.length; i++) {
+        if (data[i].toUpperCase().indexOf(filter) > -1) {
+            var resultItem = document.createElement('div');
+            resultItem.textContent = data[i];
+            searchResults.appendChild(resultItem);
+        }
+    }
+}
+</script>
+
+</body>
+</html>
